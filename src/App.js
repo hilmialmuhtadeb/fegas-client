@@ -1,7 +1,14 @@
+import AppRoutes from "./routes";
+import { Link } from 'react-router-dom'
+
 function App() {
   return (
     <div className="App">
-      <p>Hiii</p>
+      <nav>
+        <Link to="/">Home</Link>
+        <Link to="/cafes">Cafe</Link>
+      </nav>
+      <AppRoutes />
     </div>
   );
 }
