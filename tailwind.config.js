@@ -4,7 +4,14 @@ module.exports = {
     "./src/**/*.{js,jsx}",
   ],
   theme: {
-    extend: {},
+    container: (theme) => ({
+      center: true,
+      padding: {
+        DEFAULT: theme("spacing.4"),
+        sm: theme("spacing.8"),
+        lg: theme("spacing.32"),
+      }
+    })
   },
   plugins: [],
 }
