@@ -5,12 +5,16 @@ function App() {
   return (
     <div className="App">
       <Navbar />
-      <header className="bg-gradient-to-b from-indigo-700 to-sky-700 pt-24 pb-32">
+      <header className="bg-sky-700 pt-20 pb-48">
         <div className="container">
-          <h2 className="py-8 text-2xl text-white font-semibold">Fegas, Temukan cafe buat nugas di kotamu!</h2>
+          <h2 className="py-8 text-2xl text-white font-semibold">
+            Fegas, Temukan cafe buat nugas di kotamu!
+          </h2>
         </div>
       </header>
-      <AppRoutes />
+      <main>
+        <AppRoutes />
+      </main>
     </div>
   );
 }
